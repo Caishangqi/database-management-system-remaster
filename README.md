@@ -4,18 +4,20 @@
 <img src = "https://user-images.githubusercontent.com/39553613/145566584-494920e6-bdac-4c23-985d-9d00187c90e1.jpg">
 </p>
 
-<h4 align="center">一个基于ECS 165A-DBSM 的重制版，更加注重设计模式和面向对象 ？</h4>
+<h4 align="center">A remake version based on ECS 165A-DBSM with a greater focus on design patterns and object-oriented ?</h4>
 <p align="center">
-<a href="https://www.codefactor.io/repository/github/caishangqi/homeward-webstorebridge/overview/plugin-webstore-bridge"><img src="https://www.codefactor.io/repository/github/caishangqi/homeward-webstorebridge/badge/plugin-webstore-bridge" alt="CodeFactor" /></a>
-<img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/Caishangqi/homeward-plugin-oraxen-patch">
-<img alt="Lines of code" src="https://img.shields.io/badge/paper-1.19.2-green">
-<img alt="GitHub branch checks state" src="https://img.shields.io/github/checks-status/Caishangqi/homeward-plugin-oraxen-patch/master?label=build">
-<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/Caishangqi/homeward-plugin-oraxen-patch">
+<a href="https://www.codefactor.io/repository/github/caishangqi/database-management-system-remaster/overview/database-management-system-remaster"><img src="https://www.codefactor.io/repository/github/caishangqi/homeward-webstorebridge/badge/plugin-webstore-bridge" alt="CodeFactor" /></a>
+<img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/Caishangqi/database-management-system-remaster">
+<img alt="Lines of code" src="https://img.shields.io/badge/Database-LStore-green">
+<img alt="GitHub branch checks state" src="https://img.shields.io/github/checks-status/Caishangqi/database-management-system-remaster/master?label=build">
+<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/Caishangqi/database-management-system-remaster">
 </p>
 
 ## 介绍 Introduction
 
-基于插件 **Oraxen** 进行的多功能修改，实验性插件主要作用修改 **Oraxen** 失去的部分原版特性包括耐久等等
+基于项目 **[DBSM](https://github.com/aawong4/165a-winter-2023)** 进行的修改与整合，将类与类之间的关系体现得更明确并且尝试使用多种设计模式来提高项目的可拓展性。同时兼顾多种可选配置以及控制面板。
+
+Based on the modification and integration of the project **[DBSM](https://github.com/aawong4/165a-winter-2023)**, the relationship between classes is more clearly reflected and a variety of design patterns are tried to improve the scalability of the project. At the same time, it takes into account a variety of optional configurations and control panels.
 
 [//]: # (<p align="center">)
 
@@ -23,43 +25,25 @@
 
 [//]: # (</p>)
 
-## 特性
+## 特性 Features
 
-- 现在使用原版工具会正确的掉耐久
-- 掉的耐久支持原版附魔例如 (耐久)
-- 支持多个插件的物品 MMOItems Oraxen 等
+- 支持额外的索引搜索
+- 支持数据库可视化 (正在实现)
 
-## 指令
+## 指令 Command
 
-`/horaxen` 为插件主指令
-
-`/horaxen reload <durability>` 重载需要消耗耐久的工具黑名单
-
-`/horaxen reload` 重载插件配置
+`/db` 为项目主指令
 
 ## 未来计划 TODO
 
-- 或许这个插件会被整合到一插件中，含多个补丁可配置是否开启 (需要严谨构思设计模式)
-- 添加对 MMOItems 的支持
-
-## 协调系列 Homeward Species
-
-
-| **[Homeward Oraxen 协调 Oraxen 补丁](https://github.com/Caishangqi/homeward-plugin-oraxen-patch)** | **Caishangqi**  | **1.19.2** |
-|-------------------------------------------------------------------------------------------|----------------|------------|
-| **[Homeward Brewing 协调酿造](https://github.com/Ba1oretto/Brewing)**                         | **Ba1oretto**  | **1.18.2** |
-| **[Homeward Libs 协调核心](https://github.com/Caishangqi/homeward-plugin-lib)**               | **Caishangqi** | **1.18.2** |
-| **[Homeward InfoBar 协调浮窗](https://github.com/Caishangqi/homeward-plugin-infobar)**        | **Caishangqi** | **1.18.2** |
-| **[Homeward Cooking 协调烹饪](https://github.com/Caishangqi/homeward-plugin-cooking)**        | **Caishangqi** | **1.19.2** |
+- 暂无
 
 ## 特别说明 Special Information
 
-这是一个专门给服务器使用的插件，主要需求会依照服务器需求进行配置，您的需求可能会被延后，感谢谅解。
+这是一个非企业级的项目，你不应该使用该项目到任何生产环境中。
 
-_This is a plugin specially used for the server. The main requirements will be configured according to the server
-requirements. Your requirements may be delayed. Thank you for your understanding._
+_This is a non-enterprise project and you should not use this project in any production environment._
 
 ## 特别鸣谢 Special Thanks
 
-[Baioretto](https://github.com/Ba1oretto) 的各项高级JVM特性支持，在 [这里](https://github.com/Ba1oretto/Brewing)
-可以查看与这个插件类型类似的出色作品。
+暂无
