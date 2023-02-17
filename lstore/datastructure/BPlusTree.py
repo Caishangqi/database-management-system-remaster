@@ -16,21 +16,6 @@ class BPlusTree:
                 self.split()
                 self.num_keys += 1
 
-    def delete(self, key):
-        if self.root is None:
-            return
-        else:
-            self.root.delete(key)
-            if self.root.num_keys == 0 and self.root.children:
-                self.root = self.root.children[0]
-            self.num_keys -= 1
-
-    def search(self, key):
-        if self.root is None:
-            return None
-        else:
-            return self.root.search(key)
-
     def split(self):
         left_child = self.root
         right_child = TreeNode(left_child.keys[self.root.order - 1], left_child.values[self.root.order - 1])
@@ -52,6 +37,21 @@ class BPlusTree:
 
         # 将新的根节点设置为树的根
         self.root = new_root
+
+    def search(self, key):
+        if self.root is None:
+            return None
+        else:
+            return self.root.search(key)
+
+    def delete(self, key):
+        if self.root is None:
+            return
+        else:
+            self.root.delete(key)
+            if self.root.num_keys == 0 and self.root.children:
+                self.root = self.root.children[0]
+            self.num_keys -= 1
 
 
 class TreeNode:
